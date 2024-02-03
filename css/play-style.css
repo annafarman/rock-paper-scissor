@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Patrick Hand SC', cursive;
+    color: white;
+    font-size: 24px;
+    background-color: rgb(43, 42, 42);
+
+}
+
+div#body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 90vh;
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 80%;
+
+}
+
+header#header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(43, 42, 42);
+    padding: 10px 20px;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+#container {
+    flex: 1;
+}
+
+.contents {
+    flex-grow: 2;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    padding: 5px 20px;
+    margin-top: 25px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+button#home {
+    padding: 0;
+    margin: 0;
+}
+
+button.with-border {
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(211, 209, 209, 0.5);
+}
+
+button.with-border:hover {
+    box-shadow:  0 0 13px rgba(226, 226, 226, 0.7);;
+}
+
+button.with-border:active {
+    transform: translateY(2px);
+    box-shadow: 0 0 10px rgba(211, 209, 209, 0.5);
+}
+
+button:hover {
+    transform: scale(1.2);
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+
+img.paw {
+    width: 180px;
+    height: 180px;
+}
+
+img#back-btn {
+    width: 30px;
+}
+
+p.large-font {
+    font-size: 64px;
+}
+
+div#score-board {
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 50px;
+}
+
+
+div.action-buttons {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    gap: 88px;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    font-size: 18px;
+    padding-bottom: 15px;
+}
+
+
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="css/play-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet">
+    <script src="js/play-page.js" defer></script>
+    
+</head>
+
+<body>
+    <header id="header">
+        <button id="home"><img id="back-btn" src="img/back.png" alt="back button"></button>
+        <h1 class="wavy-line">Rock Paper Scissors</h1>
+        <div></div>
+    </header>
+    <div id="body">
+        <div id="container">
+            <div id="score-board">
+                <div class="score">
+                    <p class="medium-font"><strong>you</strong></p>
+                    <p class="large-font" id="player-score">0</p>
+                </div>
+                <div></div>
+                <div class="score">
+                    <p class="medium-font"><strong>cat</strong></p>
+                    <p class="large-font" id="cat-score">0</p>
+                </div>
+            </div>
+    
+            <div>
+                <h2 id="base">Meow, purr, hiss, and... paw! Choose your claw move!</h2>
+                <h2 class="hidden" id="catWins">Meow-velous! The cat reigns supreme! Better luck next time, but for now, let the feline rule!</h2>
+                <h2 class="hidden" id="humanWins">Victory for the human spirit! The hooman's resilience triumphs over the feline cunning! Meow-verlous display!</h2>
+                <h2 class="hidden" id="stalemate">Stalemate! Neither paw can claim victory.</h2>
+    
+            </div>
+
+    
+            <div id="base-img" class="contents">
+                <div>
+                    <button class="selection" value="purr"><img class="paw" src="img/rock.PNG" alt="rock"></button>
+                    <p>purr</p>
+                </div>
+                <div>
+                    <button class="selection" value="paw"><img class="paw"  src="img/paper.PNG" alt="paper"></button>
+                    <p>paw</p>
+                </div>
+                <div>
+                    <button class="selection" value="claw"><img  class="paw" src="img/scissors.PNG" alt="scissors"></button>
+                    <p>claw</p>
+                </div>       
+            </div>
+
+            <div id="results-img" class="contents hidden">
+                <div>
+                    <img id="player-choice" class="paw"  src="img/scissors.PNG" alt="player selection">
+                    <p id="player-text"></p>
+                </div>
+                <div>
+                    <img id="cat-choice" class="paw"  src="img/scissors.PNG" alt="cat selection">
+                    <p id="cat-text"></p>
+                </div>
+            </div>
+    
+            <div class="action-buttons">
+                <button id="moreBtn" class="with-border">More</button>
+                <button id="resetBtn" class="with-border">Reset</button>
+            </div>
+    
+        </div>
+    
+        <footer>
+            &copy; 2024 Rock Paper Scissor by Anna Farman - The Odin Project
+        </footer>
+    </div> 
+</body>
+</html>
